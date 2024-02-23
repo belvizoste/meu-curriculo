@@ -1,13 +1,22 @@
 header{ 
     background-color: darkseagreen;}
 
-a { margin-left: 80px; 
+a { margin-left: 7.5vw; 
 color: black;}
 
-main { background-color: antiquewhite;
+main { background-color: whitesmoke;
     font-size: larger;
+    padding: 20px;
 }
-img { width: 30vw;}
+img { width: 30vw;
+    margin-top: 0.8vw;
+}
 
 h1 { text-align: center;}
 
+div.parágrafodireito { float: left; 
+    margin-left: 30vw;
+    margin-right: 0.9vw;
+    text-align: justify; }
+
+hr { color: black;}
