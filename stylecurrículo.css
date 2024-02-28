@@ -1,51 +1,60 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap'); 
 
-header{background-color: #ce6c21;}
+body{ 
+    margin: 1;
+    padding: 1;
+    font-size: 20px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 200;} /*formatação de estilo do body*/
+    
+ header{background-color: #ce6c21;
+        padding: 10px; } /*cabeçalho*/
+    
+h1 { text-align: center;
+        font-size: 3rem;
+        font-weight: 400;} /*formatação de título geral*/ 
+        
+ a { margin-left: 3.5vw; 
+     color: black;
+    font-size: 1.4rem;} /*links do cabeçalho geral*/  
+            
+            
+ main { background-color: whitesmoke; 
+        font-size: larger;
+        padding: 20px;} /*parte principal da página*/ 
+                
+    h3 { font-size: 1.8rem;
+        font-weight: 400;} /*formatação geral do título h3*/
 
-a { margin-left: 3.5vw; 
-    color: black;
-    font-size: 1.4rem;}
-
-main { background-color: whitesmoke;
-    font-size: larger;}
+ p { line-height: 1.5;
+     margin: 1rem 0; } /*formatação geral de parágrafo*/
 
 img { width: 30vw;
     margin-top: 0.8vw;
-}
+    border-radius: 0.6%;
+    float: left;} /*foto profissional da página inicial*/
 
-h1 { text-align: center;
-    font-size: 3rem;
-    font-weight: 400;}
+.ancoraContatoPessoal a{ text-decoration: none;}
 
-div.paragrafodireito { float: left; 
+div.paragrafodireito { 
     margin-left: 32vw;
     margin-right: 3vw;
-    text-align: justify; }
+    text-align: justify;
+    font-size: 1.3rem;} /*parágrafo de apresentação página inicial*/
 
 div.colunasFormacaoAcademica {
     column-count: 2; 
     column-gap: 2vw;
-    column-rule: 20%;}
+    column-rule: 20%;} /*divisão de colunas em formação acadêmica*/
 
 table { 
     width: 40vw;
-    border-collapse: collapse;}
+    border-collapse: collapse;} /*tabela de líguas na aba de idiomas*/
 
 th, td {
     border: 0.5vw solid #ddd;
     padding: 1VW;
-    text-align: center;
-}
-body{
-    margin: 0;
-    padding: 0;
-    font-size: 20px;
-    font-family: "Raleway", sans-serif;
-    font-weight: 200;}
+    text-align: center;} /*formatação das linhas e colunas da tabela de idioma*/
 
-h3 { font-size: 1.8rem;
-     font-weight: 300;}
 
-p {
-    line-height: 1.5;
-}
+
