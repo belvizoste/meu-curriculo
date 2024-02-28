@@ -1,24 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap'); 
 
-header{background-color: darkseagreen;}
+header{background-color: #ce6c21;}
 
-a { margin-left: 6.5vw; 
+a { margin-left: 3.5vw; 
     color: black;
-    font-size: larger;}
+    font-size: 1.4rem;}
 
 main { background-color: whitesmoke;
-    font-size: larger;
-    padding: 20px;
-    font-family: "Raleway", sans-serif;
-    margin: 2rem;
-}
+    font-size: larger;}
+
 img { width: 30vw;
     margin-top: 0.8vw;
 }
 
 h1 { text-align: center;
-    margin-top: 0%;
-    font-size: 3rem;}
+    font-size: 3rem;
+    font-weight: 400;}
 
 div.paragrafodireito { float: left; 
     margin-left: 32vw;
@@ -28,8 +25,7 @@ div.paragrafodireito { float: left;
 div.colunasFormacaoAcademica {
     column-count: 2; 
     column-gap: 2vw;
-    column-rule: 20%;
-}
+    column-rule: 20%;}
 
 table { 
     width: 40vw;
@@ -39,4 +35,17 @@ th, td {
     border: 0.5vw solid #ddd;
     padding: 1VW;
     text-align: center;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 200;}
+
+h3 { font-size: 1.8rem;
+     font-weight: 300;}
+
+p {
+    line-height: 1.5;
 }
