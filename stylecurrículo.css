@@ -34,7 +34,8 @@ img { width: 30vw;
     border-radius: 0.6%;
     float: left;} /*foto profissional da página inicial*/
 
-.ancoraContatoPessoal a{ text-decoration: none;}
+.ancoraContatoPessoal p{ text-decoration: none;
+margin-left: 3.5vw;}
 
 div.paragrafodireito { 
     margin-left: 32vw;
@@ -56,5 +57,7 @@ th, td {
     padding: 1VW;
     text-align: center;} /*formatação das linhas e colunas da tabela de idioma*/
 
-
+div.tituloContato h3{
+    margin-left: 10vw;
+}
 
