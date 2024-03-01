@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap'); 
 
 body{ 
-    margin: 1;
-    padding: 1;
-    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
     font-family: "Raleway", sans-serif;
     font-weight: 200;} /*formatação de estilo do body*/
     
@@ -11,9 +11,9 @@ body{
         padding: 10px; } /*cabeçalho*/
     
 h1 { text-align: center;
-        font-size: 3rem;
-        font-weight: 400;} /*formatação de título geral*/ 
-        
+    font-size: 3rem;
+    font-weight: 400;} /*formatação de título geral*/ 
+    
  a { margin-left: 3.5vw; 
      color: black;
     font-size: 1.4rem;} /*links do cabeçalho geral*/  
@@ -31,11 +31,17 @@ h1 { text-align: center;
 
 img { width: 30vw;
     margin-top: 0.8vw;
-    border-radius: 0.6%;
+    border-radius: 4%;
     float: left;} /*foto profissional da página inicial*/
 
-.ancoraContatoPessoal p{ text-decoration: none;
-margin-left: 3.5vw;}
+.ancoraContatoPessoal a{
+    text-decoration: none;
+    margin-left: 0.5vw;
+    font-size: 1.1rem;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.5vw;
+}
 
 div.paragrafodireito { 
     margin-left: 32vw;
@@ -57,7 +63,28 @@ th, td {
     padding: 1VW;
     text-align: center;} /*formatação das linhas e colunas da tabela de idioma*/
 
-div.tituloContato h3{
-    margin-left: 10vw;
+.tituloContato h3{
+    margin-left: 0.5vw;
 }
 
+:root {
+    font-size: 16px;
+    
+}
+#tecnologia {display: flex;
+    justify-content:space-evenly;}
+
+article h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: justify;
+    margin-bottom: 0.5vw;}
+
+article h2{
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: justify;}
+
+
+
+article { width: 30%;}
