@@ -13,35 +13,36 @@ body{
 h1 { text-align: center;
     font-size: 3rem;
     font-weight: 400;} /*formatação de título geral*/ 
+
+h2 {font-weight: 600;}
     
- a { margin-left: 3.5vw; 
+#navegacao-de-paginas a { margin-left: 3.5vw; 
      color: black;
     font-size: 1.4rem;} /*links do cabeçalho geral*/  
-            
             
  main { background-color: whitesmoke; 
         font-size: larger;
         padding: 20px;} /*parte principal da página*/ 
                 
-    h3 { font-size: 1.8rem;
+h3 { font-size: 1.8rem;
         font-weight: 400;} /*formatação geral do título h3*/
 
  p { line-height: 1.5;
      margin: 1rem 0; } /*formatação geral de parágrafo*/
 
 img { width: 30vw;
-    margin-top: 0.8vw;
-    border-radius: 4%;
+    margin-top: .8vw;
+    border-radius: 10%;
     float: left;} /*foto profissional da página inicial*/
 
 .ancoraContatoPessoal a{
     text-decoration: none;
-    margin-left: 0.5vw;
+    margin-left: .5vw;
     font-size: 1.1rem;
     display: flex;
     flex-direction: column;
     margin-bottom: 0.5vw;
-}
+    font-weight: 500;}
 
 div.paragrafodireito { 
     margin-left: 32vw;
@@ -54,37 +55,82 @@ div.colunasFormacaoAcademica {
     column-gap: 2vw;
     column-rule: 20%;} /*divisão de colunas em formação acadêmica*/
 
+.projetoPolitec img {
+        width: 20%;
+    }
+
 table { 
     width: 40vw;
     border-collapse: collapse;} /*tabela de líguas na aba de idiomas*/
 
 th, td {
-    border: 0.5vw solid #ddd;
+    border: .5vw solid #ddd;
     padding: 1VW;
     text-align: center;} /*formatação das linhas e colunas da tabela de idioma*/
 
 .tituloContato h3{
-    margin-left: 0.5vw;
+    margin-left:.5vw;
 }
 
 :root {
     font-size: 16px;
     
 }
-#tecnologia {display: flex;
-    justify-content:space-evenly;}
+
+article { 
+    width: 30%;
+    background-color: #B784B7;
+    padding: 1rem ;
+}
+
+
+article header{
+    background-color: #AD88C6;
+}
+
+article p{
+    background-color: #FFE6E6;
+    margin-top: 0%;
+}
 
 article h1 {
     font-size: 2rem;
     font-weight: bold;
     text-align: justify;
-    margin-bottom: 0.5vw;}
-
-article h2{
-    font-size: 1.5rem;
+    margin-bottom: .5vw;}
+    
+ article h2{
+     font-size: 1.5rem;
     font-weight: 600;
-    text-align: justify;}
-
-
-
+     text-align: justify;
+     margin-bottom:.2vw}
+        
 article { width: 30%;}
+        
+
+
+ #tecnologia {display: flex;
+    justify-content:space-evenly;
+    text-align: justify;}
+        
+.projetoPolitec p,h2 {
+    text-align: justify;}
+            
+#certificacoesCabecalho {
+     background-color: #7469B6;}
+                
+ #certificacoesMain {
+      background-color: #E1AFD1;
+                }
+                
+.continueLendo { background-color: #E6B9DE;
+  padding: .5rem 1rem;
+  margin-top: 1rem;  
+  border-radius: 8px;
+ 
+}
+
+.continueLendo a{
+    color: #ffffff;
+    text-decoration: none;
+}
