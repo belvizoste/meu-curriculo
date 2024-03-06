@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap'); 
 
 body{ 
-    margin: 0;
+    margin: 10 10;
     padding: 0;
     font-size: 18px;
     font-family: "Raleway", sans-serif;
@@ -9,6 +9,10 @@ body{
     
  header{background-color: #ce6c21;
         padding: 10px; } /*cabeçalho*/
+
+main { background-color: whitesmoke; 
+    font-size: larger;
+     padding: 20px;} /*parte principal da página*/ 
     
 h1 { text-align: center;
     font-size: 3rem;
@@ -20,9 +24,7 @@ h2 {font-weight: 600;}
      color: black;
     font-size: 1.4rem;} /*links do cabeçalho geral*/  
             
- main { background-color: whitesmoke; 
-        font-size: larger;
-        padding: 20px;} /*parte principal da página*/ 
+
                 
 h3 { font-size: 1.8rem;
         font-weight: 400;} /*formatação geral do título h3*/
@@ -34,6 +36,9 @@ img { width: 30vw;
     margin-top: .8vw;
     border-radius: 5%;
     float: left;} /*foto profissional da página inicial*/
+
+.tituloContato h3{
+    margin-left:.5vw;} /*formatação do título de contato na aba inicial*/ 
 
 .ancoraContatoPessoal a{
     text-decoration: none;
@@ -74,10 +79,6 @@ th, td {
     padding: 1VW;
     text-align: center;} /*formatação das linhas e colunas da tabela de idioma*/
 
-.tituloContato h3{
-    margin-left:.5vw;
-}
-
 
 article { 
     width: 30%;
@@ -111,20 +112,26 @@ article h1 {
     text-align: justify;} /*formatação do id do artigo na aba de certificações, deixando em formato de artigos separados*/
             
 #certificacoesCabecalho {
-     background-color: #7469B6;}
+     background-color: #7469B6;} /*formatação do id do cabeçalho na aba de certificações, mudando a cor do cabeçalho*/
                 
  #certificacoesMain {
       background-color: #E1AFD1;
-                }
+                } /*formatação do id do artigo na aba de certificações, mudanças de cor*/
                 
 .continueLendo { background-color: #E6B9DE;
   padding: .5rem 1rem;
   margin-top: 1rem;  
   border-radius: 8px;
- 
-}
+} /*formatação da class do botão de "continue lendo" do artigo na aba de certificações*/
 
 .continueLendo a{
     color: #ffffff;
     text-decoration: none;
-}
+} /*formatação da class do botão de "continue lendo" do artigo na aba de certificações*/
+
+.lista-tags li{
+    display: inline-block;
+    background-color: #cecece;
+    padding: 5px;
+    border-radius: 4px;
+    margin: 5px 0;} /*formatação do estilo das habilidades em soft e hard skills*/
