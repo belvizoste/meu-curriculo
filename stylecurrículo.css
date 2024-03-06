@@ -32,7 +32,7 @@ h3 { font-size: 1.8rem;
 
 img { width: 30vw;
     margin-top: .8vw;
-    border-radius: 10%;
+    border-radius: 5%;
     float: left;} /*foto profissional da página inicial*/
 
 .ancoraContatoPessoal a{
@@ -57,9 +57,15 @@ div.colunasFormacaoAcademica {
 
 .projetoPolitec img {
         width: 20%;
-    }
+        margin-right: 2vw;
+    } /*imagem de perfil politec na aba projetos acadêmicos */
 
-table { 
+.projetoPolitec p {
+    text-align: justify;
+    margin-left: 3vw;
+    margin-right: 10vw;} /*parágrafo de explicação do politec na aba projetos acadêmicos */
+
+table {
     width: 40vw;
     border-collapse: collapse;} /*tabela de líguas na aba de idiomas*/
 
@@ -72,49 +78,37 @@ th, td {
     margin-left:.5vw;
 }
 
-:root {
-    font-size: 16px;
-    
-}
 
 article { 
     width: 30%;
     background-color: #B784B7;
-    padding: 1rem ;
-}
-
+    padding: 1rem ;} /*formatação de artigo na aba de certificações*/
+    
+article { width: 30%;} /*formatação de artigo na aba de certificações*/
 
 article header{
-    background-color: #AD88C6;
-}
+    background-color: #AD88C6;} /*formatação do cabeçalho do artigo na aba de certificações*/
 
 article p{
     background-color: #FFE6E6;
-    margin-top: 0%;
-}
+    margin-top: 0%;} /*formatação do parágrafo do artigo na aba de certificações*/
 
 article h1 {
     font-size: 2rem;
     font-weight: bold;
     text-align: justify;
-    margin-bottom: .5vw;}
+    margin-bottom: .5vw;} /*formatação do título do artigo na aba de certificações*/
+
     
  article h2{
      font-size: 1.5rem;
     font-weight: 600;
      text-align: justify;
-     margin-bottom:.2vw}
+     margin-bottom:.2vw} /*formatação do título do artigo na aba de certificações*/
         
-article { width: 30%;}
-        
-
-
  #tecnologia {display: flex;
     justify-content:space-evenly;
-    text-align: justify;}
-        
-.projetoPolitec p,h2 {
-    text-align: justify;}
+    text-align: justify;} /*formatação do id do artigo na aba de certificações, deixando em formato de artigos separados*/
             
 #certificacoesCabecalho {
      background-color: #7469B6;}
