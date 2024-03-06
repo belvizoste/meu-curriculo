@@ -1,8 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap'); 
 
+:root {
+    font-size: 16px;
+    scroll-behavior: smooth;
+    --cor-primaria-texto: #353535; 
+}
+
 body{ 
-    margin: 10 10;
-    padding: 0;
+    margin: 0;
     font-size: 18px;
     font-family: "Raleway", sans-serif;
     font-weight: 200;} /*formatação de estilo do body*/
@@ -15,19 +20,17 @@ main { background-color: whitesmoke;
      padding: 20px;} /*parte principal da página*/ 
     
 h1 { text-align: center;
-    font-size: 3rem;
-    font-weight: 400;} /*formatação de título geral*/ 
+    font-size: 3rem;} /*formatação de título geral*/ 
 
 h2 {font-weight: 600;}
     
 #navegacao-de-paginas a { margin-left: 3.5vw; 
-     color: black;
+     color: var(--cor-primaria-texto);
     font-size: 1.4rem;} /*links do cabeçalho geral*/  
-            
-
                 
-h3 { font-size: 1.8rem;
-        font-weight: 400;} /*formatação geral do título h3*/
+h3 { font-size: 1.8rem;} /*formatação geral do título h3*/
+
+h1, h3 {font-weight: 400;}
 
  p { line-height: 1.5;
      margin: 1rem 0; } /*formatação geral de parágrafo*/
@@ -37,12 +40,11 @@ img { width: 30vw;
     border-radius: 5%;
     float: left;} /*foto profissional da página inicial*/
 
-.tituloContato h3{
+.tituloContato h3,a {
     margin-left:.5vw;} /*formatação do título de contato na aba inicial*/ 
 
 .ancoraContatoPessoal a{
     text-decoration: none;
-    margin-left: .5vw;
     font-size: 1.1rem;
     display: flex;
     flex-direction: column;
@@ -55,20 +57,38 @@ div.paragrafodireito {
     text-align: justify;
     font-size: 1.3rem;} /*parágrafo de apresentação página inicial*/
 
-div.colunasFormacaoAcademica {
-    column-count: 2; 
+div.colunasFormacaoAcademica /* 
+    @TODO
+    1. mudar formatação de coluna para flex-box do tipo de artigo 
+*/
+    {column-count: 2; 
     column-gap: 2vw;
     column-rule: 20%;} /*divisão de colunas em formação acadêmica*/
 
-.projetoPolitec img {
+
+#projetoPolitec img, .palcopsico{
         width: 20%;
         margin-right: 2vw;
+        margin-left: 5vw;
     } /*imagem de perfil politec na aba projetos acadêmicos */
 
-.projetoPolitec p {
+#projetoPolitec p {
     text-align: justify;
-    margin-left: 3vw;
-    margin-right: 10vw;} /*parágrafo de explicação do politec na aba projetos acadêmicos */
+    margin-left: 5vw;
+    margin-right: 5vw;} /*parágrafo de explicação do politec na aba projetos acadêmicos */
+
+#projetoPolitec h2{
+    margin: 0vw 42vw
+}
+
+
+.grupodepsico {
+    float: left;
+}
+
+.palcopsico {
+    float: right;
+}
 
 table {
     width: 40vw;
@@ -85,7 +105,9 @@ article {
     background-color: #B784B7;
     padding: 1rem ;} /*formatação de artigo na aba de certificações*/
     
-article { width: 30%;} /*formatação de artigo na aba de certificações*/
+article { width: 30%;
+    height: 150px;
+    overflow: hidden;} /*formatação de artigo na aba de certificações*/
 
 article header{
     background-color: #AD88C6;} /*formatação do cabeçalho do artigo na aba de certificações*/
@@ -118,16 +140,19 @@ article h1 {
       background-color: #E1AFD1;
                 } /*formatação do id do artigo na aba de certificações, mudanças de cor*/
                 
-.continueLendo { background-color: #E6B9DE;
+.continueLendo a{ background-color: #E6B9DE;
   padding: .5rem 1rem;
   margin-top: 1rem;  
   border-radius: 8px;
+  color: #ffffff;
+  text-decoration: none;
 } /*formatação da class do botão de "continue lendo" do artigo na aba de certificações*/
 
-.continueLendo a{
-    color: #ffffff;
+.continueLendo {
+    color: pink;
     text-decoration: none;
-} /*formatação da class do botão de "continue lendo" do artigo na aba de certificações*/
+
+}
 
 .lista-tags li{
     display: inline-block;
