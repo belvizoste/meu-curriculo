@@ -3,37 +3,64 @@
 :root {
     font-size: 16px;
     scroll-behavior: smooth;
-    --cor-primaria-texto: #353535; 
+    --padding-padrao-seccao: 40px;}
+
+[data-tema="light"] {
+    --plano-fundo: #ffffff; 
+    --cor-primaria-texto: #353535;
+    --cor-fundo-tags: #bebebe;
+    --cor-da-header: #81689D;
+    --cor-padrao-titulos: #0F0F0F;
+
 }
+
+[data-tema="dark"] {
+    --plano-fundo: #030637; 
+    --cor-primaria-texto: #ffffff; 
+    --cor-fundo-tags: #E5B8F4; 
+    --cor-da-header: #3C0753;
+    --cor-padrao-titulos: #FAF0E6;
+    
+    
+}
+
 
 body{ 
     margin: 0;
     font-size: 18px;
     font-family: "Raleway", sans-serif;
-    font-weight: 200;} /*formatação de estilo do body*/
+    font-weight: 200;
+    background-color: var(--plano-fundo);} /*formatação de estilo do body*/
     
  header{background-color: #ce6c21;
-        padding: 10px; } /*cabeçalho*/
+        padding: var(--padding-padrao-seccao);
+        background-color: var(--cor-da-header);
+     } /*cabeçalho*/
 
 main { background-color: whitesmoke; 
     font-size: larger;
-     padding: 20px;} /*parte principal da página*/ 
+     padding: var(--padding-padrao-seccao);
+     background-color: var(--plano-fundo);} /*parte principal da página*/ 
     
 h1 { text-align: center;
     font-size: 3rem;} /*formatação de título geral*/ 
 
-h2 {font-weight: 600;}
+h2 {font-weight: 600;
+    color: var(--cor-padrao-titulos);}
     
 #navegacao-de-paginas a { margin-left: 3.5vw; 
      color: var(--cor-primaria-texto);
     font-size: 1.4rem;} /*links do cabeçalho geral*/  
                 
-h3 { font-size: 1.8rem;} /*formatação geral do título h3*/
+h3 { font-size: 1.8rem;
+    color: var(--cor-padrao-titulos);} /*formatação geral do título h3*/
 
-h1, h3 {font-weight: 400;}
+h1, h3 {font-weight: 400; 
+     color: var(--cor-padrao-titulos);}
 
  p { line-height: 1.5;
-     margin: 1rem 0; } /*formatação geral de parágrafo*/
+     margin: 1rem 0; 
+     color: var(--cor-primaria-texto);} /*formatação geral de parágrafo*/
 
 img { width: 30vw;
     margin-top: .8vw;
@@ -66,21 +93,24 @@ div.colunasFormacaoAcademica /*
     column-rule: 20%;} /*divisão de colunas em formação acadêmica*/
 
 
-#projetoPolitec img, .palcopsico{
+                     /* PROJETOS ACADÊMICOS */
+
+#projetoPolitec img, .palcopsico {
         width: 20%;
         margin-right: 2vw;
         margin-left: 5vw;
     } /*imagem de perfil politec na aba projetos acadêmicos */
 
-#projetoPolitec p {
-    text-align: justify;
-    margin-left: 5vw;
-    margin-right: 5vw;} /*parágrafo de explicação do politec na aba projetos acadêmicos */
 
 #projetoPolitec h2{
     margin: 0vw 42vw
 }
 
+#projetoPsico, #projetoPolitec p {
+    text-align: justify;
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
 
 .grupodepsico {
     float: left;
@@ -90,9 +120,12 @@ div.colunasFormacaoAcademica /*
     float: right;
 }
 
+                    /* IDIOMAS */
+
 table {
     width: 40vw;
-    border-collapse: collapse;} /*tabela de líguas na aba de idiomas*/
+    border-collapse: collapse;
+    color: var(--cor-primaria-texto)} /*tabela de líguas na aba de idiomas*/
 
 th, td {
     border: .5vw solid #ddd;
@@ -100,45 +133,37 @@ th, td {
     text-align: center;} /*formatação das linhas e colunas da tabela de idioma*/
 
 
+                    /* CERTIFICAÇÕES */
+
 article { 
     width: 30%;
     background-color: #B784B7;
     padding: 1rem ;} /*formatação de artigo na aba de certificações*/
     
 article { width: 30%;
-    height: 150px;
-    overflow: hidden;} /*formatação de artigo na aba de certificações*/
+    height: 0px;
+   } /*formatação de artigo na aba de certificações*/
 
 article header{
     background-color: #AD88C6;} /*formatação do cabeçalho do artigo na aba de certificações*/
 
 article p{
     background-color: #FFE6E6;
-    margin-top: 0%;} /*formatação do parágrafo do artigo na aba de certificações*/
+    margin-top: 0%;
+    color: var(--cor-primaria-texto)} /*formatação do parágrafo do artigo na aba de certificações*/
 
-article h1 {
+article h1,h2 {
     font-size: 2rem;
     font-weight: bold;
     text-align: justify;
     margin-bottom: .5vw;} /*formatação do título do artigo na aba de certificações*/
 
     
- article h2{
-     font-size: 1.5rem;
-    font-weight: 600;
-     text-align: justify;
-     margin-bottom:.2vw} /*formatação do título do artigo na aba de certificações*/
         
  #tecnologia {display: flex;
     justify-content:space-evenly;
     text-align: justify;} /*formatação do id do artigo na aba de certificações, deixando em formato de artigos separados*/
             
-#certificacoesCabecalho {
-     background-color: #7469B6;} /*formatação do id do cabeçalho na aba de certificações, mudando a cor do cabeçalho*/
-                
- #certificacoesMain {
-      background-color: #E1AFD1;
-                } /*formatação do id do artigo na aba de certificações, mudanças de cor*/
                 
 .continueLendo a{ background-color: #E6B9DE;
   padding: .5rem 1rem;
@@ -156,7 +181,8 @@ article h1 {
 
 .lista-tags li{
     display: inline-block;
-    background-color: #cecece;
+    background-color:var(--cor-fundo-tags);
     padding: 5px;
     border-radius: 4px;
-    margin: 5px 0;} /*formatação do estilo das habilidades em soft e hard skills*/
+    margin: 5px 0;
+    color: var(--cor-primaria-texto);} /*formatação do estilo das habilidades em soft e hard skills*/
